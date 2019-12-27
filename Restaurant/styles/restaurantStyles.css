@@ -1,0 +1,92 @@
+/*
+Creator: Adrian Loera
+Date created: 12/22/2019
+Date last modified: 12/26/2019
+*/
+body {
+	background-color: #ffcc99;
+	font-family: arial;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+h1 {
+	font-size: 2.5em;
+}
+nav {
+	border-top: thin #5b7d87 solid;
+	border-bottom: thin #5b7d87 solid;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+nav .btn {
+	background-color: #9999ff;
+	color: #fef9ff;
+}
+
+nav .btn:hover {
+	font-weight: bold;
+}
+
+.card-header, .card-header .btn {
+	background-color: #5b7d87;
+	color: #fef9ff; 
+}
+
+footer {
+	/*background-color: #9999ff;
+	color: #000000;
+	height: 140px;
+	text-align: center;
+	padding: 30px 10px 20px 10px;
+	font-size: 1.1em;*/
+	margin-top: 6px;
+}
+
+/* Form Stryling */
+label, fieldset {
+	font-size: 1.1em;
+}
+input[type=text] {
+	border: 2px solid #0d1f2d;
+	width: 50%;
+	padding: 8px 8px;
+	margin: 12px 0;
+	box-sizing: border-box;
+	font-size: 1.1em;
+}
+fieldset {
+	background-color:#ffcc99;
+	width: 100%;
+	padding: 6px 10px;
+	margin: 6px 0;
+	box-sizing: border-box;
+}
+select, textarea {
+	margin: 12px 0;
+	font-size: 1em;
+}
+input[type=submit] {
+	font-size: 1.2em;
+	background-color: #9999ff;
+	color: #fef9ff;
+	padding: 4px 8px;
+}
+input[type=submit]:hover {
+	background-color: #fef9ff;
+	color: #546a7b;
+}
+textarea {
+	width: 100%;
+	height: 200px;
+	padding: 12px 20px;
+	margin: 12px 0;
+	box-sizing: border-box;
+	border: 2px solid #0d1f2d;
+	border-radius: 3px;
+	background-color: #fff;
+	resize: none;
+}
+#current-page {
+	text-align: left;
+}

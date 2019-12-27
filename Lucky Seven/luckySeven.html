@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+    Name: Adrian Loera 
+    Date Created: 12/26/2019 
+    Most recent revision: 12/26/2019
+-->
+<html>
+<head>
+    <script type="text/JavaScript" src="luckySeven.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet" type="text/css" />
+	<style>
+		body {
+			background-color: #fef9ff;
+			font-family:helvetica;
+			color: #0d1f2d;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+		caption {
+			font-weight: bold;
+			font-size: 2.0em;
+			margin-bottom: 8px;
+			color: #000000
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+    <h1>Lucky Seven</h1>
+    <form name="numberFun" onsubmit="return validateItems();" 
+          onreset="resetForm();" class="form-inline">
+            <div class="form-group">
+                <label for="num1">Starting Bet: $</label>
+                <input type="number" class="form-control" id="num1">
+            </div><br /><br />
+            <button type="submit" id="submitButton" class="btn btn-default">Play</button>
+    </form>
+	<hr />
+    <table id="results" class="table table-striped" style="display:none;">
+		<caption>Results</caption>
+        <tbody>
+            <tr>
+                <td>Starting Bet:</td>
+                <td>$<span id="startBet"></span></td>
+            </tr>
+            <tr>
+                <td>Total Rolls Before Going Broke:</td>
+                <td><span id="totalRolls"></span></td>
+            </tr>
+            <tr>
+                <td>Highest Amount Won:</td>
+                <td>$<span id="highAmount"></span></td>
+            </tr>
+            <tr>
+                <td>Roll Count at Highest Amount Won:</td>
+                <td><span id="rollHighAmount"></span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

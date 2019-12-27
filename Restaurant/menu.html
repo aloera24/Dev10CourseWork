@@ -1,0 +1,157 @@
+<!DOCTYPE html> 
+<!--
+    Name: Adrian Loera 
+    Date Created: 12/20/2019 
+    Most recent revision: 12/26/2019
+-->
+<html lang="en"> 
+    <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+        <title>Food Menu</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<style>
+			h2 {
+				font-style:italic;
+			}
+			caption {
+				font-weight: bold;
+				font-size: 1.2em;
+				margin-bottom: 8px;
+			}
+			table, th, td {
+				border: 1px solid #0d1f2d;
+				border-collapse: collapse;
+				padding: 5px, 10px;
+			}
+			table {
+				width: 90%;
+				margin: auto;
+			}
+			tr {
+				height: 30px;
+			}
+			th {
+				background-color: #9999ff;
+				color: #f2eded;
+			}
+			tr:nth-child(even) {
+				background-color: #ccccff;
+			}
+		</style>
+    </head> 
+    
+    <body>
+        <header class="jumbotron" style="background-color:#9999ff" >
+			<h5 id="current-page">Menu</h5>
+            <h1 class="text-center"><strong>Flying Food</strong></h1>
+			<h4 class="text-right mt-5">We are opening up a new Restaurant Location!</h3>
+        </header>
+
+        <nav>
+			<!-- Links to the home page, food menu, and contacting us -->
+			<!--<p><a href="index.html">Home</a></p>
+			<p><a href="menu.html">Menu</a></p>
+			<p><a href="contact.html">Contact Us</a></p>-->
+			<a class="btn badge-pill" href="index.html">Home</a>
+			<a class="btn badge-pill" href="menu.html">Menu</a>
+			<a class="btn badge-pill" href="contact.html">Contact Us</a>
+		</nav>
+		 <div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md">
+					<h2><strong>Burgers and Fries</strong></h2>
+					<p>An American Classic!<br />
+					Your choice - with or without cheese<br />
+					Pickle, onion, tomato, and lettuce<br />
+					Served with our famous thick cut french fries<br />
+					$7.95</p>
+				</div>	
+				<div class="col-lg-6 col-md">
+					<h2><strong>Hot Dogs and Chips</strong></h2>
+					<p>A Summer Classic!<br />
+					Your choice - White or wheat bun<br />
+					Relish, mustard, and ketchup<br />
+					Served with our house-made chip<br />
+					$7.95</p>
+				</div>	
+				<div class="col-lg-9 col-md">
+					<h2><strong>Italian Sausage and Peppers</strong></h2>
+					<p>An All-Time Favorite!<br />
+					Your choice - mild or spicy Cole Saw<br />
+					Served with garlic mashers<br />
+					$10.95</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md">	
+					<h2><strong>Tenderloin Sandwich and Chips</strong></h2>
+					<p>Really Hits the Spot!<br />
+					Plain or Sesame Seed Bun<br />
+					Pickle, onion, tomato, and lettuce<br />
+					Served with our house-made chips<br />
+					$8.95</p>
+				</div>	
+				<div class="col-lg-6 col-md">	
+					<h2><strong>House Salad</strong></h2>
+					<p>On he Lighter Side<br />
+					Your choice - with or without cheese<br />
+					Iceberg lettuce, tomatoes, peppers<br />
+					Thousand Island or Ranch<br />
+					Dressing Served witha dinner roll<br />
+					$6.95</p>
+				</div>	
+				<div class="col-lg-9 col-md">
+					<h2><strong>Brisket Sandwich and Fries</strong></h2>
+					<p>A Taster of Texas!<br />
+					Smoked Brisket on thick-cut<br />
+					Texas Toast<br />
+					Cole Slaw<br />
+					Served with our famous thick-cut<br />french fries<br />
+					$7.95</p>
+				</div>
+			</div>
+		</div>
+			<article id="beverages">
+				<table>
+					<thead>
+						<tr>
+							<th>Beverage</th>
+							<th>Price</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Root Beer</td>
+							<td>$3.00</td>
+						</tr>
+						<tr>
+							<td>Bottled Water</td>
+							<td>$1.25</td>
+						</tr>
+						<tr>
+							<td>Lemonade</td>
+							<td>$1.00</td>
+						</tr>
+						<tr>
+							<td>Iced Tea</td>
+							<td>$1.25</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+
+		<footer class="jumbotron" style="background-color:#9999ff">
+			<p>This website is will give you a better experience with JavaScript enabled</p>
+			<p class="text-center"><strong>1111 Air Street, Flow City, Skytopia, 11081<br />
+			(351) 451-1234</strong></p>
+		</footer>
+		
+		<!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</body> 
+</html>

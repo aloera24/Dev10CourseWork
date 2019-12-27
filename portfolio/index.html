@@ -2,61 +2,153 @@
 <!--
 Name: Adrian Loera
 Date Created: 12/14/2019
-Most recent revision: 12/18/2019
+Most recent revision: 12/22/2019
 -->
-<html>
+<html lang="en">
 
 <head>
-<title>Adrian's Portfolio</title>
+	<title>Adrian's Portfolio</title>
+	<link href="styles/main.css" rel="stylesheet" type="text/css" />
+	<style>
+		caption {
+			font-weight: bold;
+			font-size: 1.2em;
+			margin-bottom: 8px;
+		}
+		table, th, td {
+			border: 1px solid #0d1f2d;
+			border-collapse: collapse;
+			padding: 5px, 10px;
+		}
+		table {
+			width: 90%;
+			margin: auto;
+		}
+		tr {
+			height: 30px;
+		}
+		th {
+			background-color: #546a7b;
+			color: #f2eded;
+		}
+		tr:nth-child(odd) {
+			background-color: #e4c3ad;
+		}
+	</style>
 </head>
 
 <body>
-	<h1>Portfolio for Adrian Loera</h1>
+	<header>
+		<h1>Portfolio for Adrian Loera</h1>
+	</header>
 	
-	<hr />
+	<nav>
+		
+		<!-- The nav element will include navigation buttons or links -->
+		
+		<p><a href="projects.html">Projects</a></p>
+		<p><a href="contact.html">Contact Me</a></p>
+		<p><a href="testimonials.html">Testimonials</a></p>
+		<div class="clear-float"></div>
+	</nav>
 	
-	<!-- We need to add links to projects.html, contact.html, and testimonials.html -->
+	<section>
 	
-	<p>Links to our pages will go here</p>
-	<hr />
+		<article class="border" id="about-me">
+			<h2><em>About Me</em></h2>
+			<a href="index.html"><img src="images/portrait.jpg" alt="Portrait of Adrian Loera" /></a>
+			<p>Mauris in quam vel est <strong>euismod pellentesque sed eu nibh.</strong> Integer vel purus 
+			diam. Sed pretium mi vitae justo suscipit commodo. Phasellus mattis ligula vel 
+			odio venenatis, ut cursus dolor euismod. Aenean pharetra purus ut augue elementum, 
+			id euismod lorem blandit. </p>
+			<p>Cras pulvinar laoreet <strong>augue sit amet imperdiet.</strong> Nulla 
+			neque mi, viverra non dapibus sit amet, gravida vel ante. In 
+			sodales massa in mattis fermentum. Curabitur vel lacinia mauris.</p>
+			<div class="clear-float"></div>
+		</article>
+			
+		<article id="past-experiences">
+			<h2><em>Past Experiences</em></h2>
+			<a href="index.html"><img src="images/experience.jpg" alt="Past experiences" /></a>
+			<div class="right-content">
+			<table>
+				<caption>Employment History</caption>
+				<thead>
+					<tr>
+						<th>Years of Employment</th>
+						<th>Title</th>
+						<th>Company</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2018-Present</td>
+						<td>Apprentice</td>
+						<td>The Software Guild</td>
+					</tr>
+					<tr>
+						<td>2012-2018</td>
+						<td>Clerk</td>
+						<td>United Shipping Services</td>
+					</tr>
+					<tr>
+						<td>2007-2012</td>
+						<td>Student</td>
+						<td>State University</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			<div class="clear-float"></div>
+		</article>
+			
+		<article id="hobbies">
+			<h2><em>Hobbies</em></h2>
+			<a href="index.html"><img src="images/hobbies.jpg" alt="Hobbies" /></a>
+			<div class="right-content">
+			<ul>
+				<li>Authors</li>
+				<ol>
+					<li>Stephen King</li>
+					<li>Dan Brown</li>
+					<li>Robin Hobb</li>
+				</ol>
+				<li>Video Games</li>
+				<ol>
+					<li>Portal</li>
+					<li>World of Warcraft</li>
+					<li>Skyrim</li>
+				</ol>
+			</ul>
+			<ul>
+				<li>Sports</lil>
+				<ul>
+					<li>Soccer</li>
+					<li>Rugby<li>
+					<li>Basketball</li>
+				</ul>
+				<li>Outdoor Activities</li>
+				<ul>
+					<li>Building Sandcastles</li>
+					<li>Pokemon Hunting</li>
+					<li>Skiing</li>
+				</ul>
+			</ul>
+			</div>
+			<div class="clear-float"></div>
+		</article>
+		
+		<!-- <article>
+			<p>
+            In this paragraph, our <span style="color: blue">span element</span> will
+            highlight the text it contains in yellow.
+			</p>
+		</article> -->
+	</section>
 	
-	<h2><em>About Me</em></h2>
-	
-	<p>Mauris in quam vel est euismod pellentesque sed eu nibh. Integer vel purus 
-	diam. Sed pretium mi vitae justo suscipit commodo. Phasellus mattis ligula vel 
-	odio venenatis, ut cursus dolor euismod. Aenean pharetra purus ut augue elementum, 
-	id euismod lorem blandit. </p>
-	<p>Cras pulvinar laoreet augue sit amet imperdiet. Nulla 
-	neque mi, viverra non dapibus sit amet, gravida vel ante. In 
-	sodales massa in mattis fermentum. Curabitur vel lacinia mauris.</p>
-	
-	<h2><em>Past Experiences</em></h2>
-	
-	<p>Pellentesque iaculis, justo in vehicula accumsan, nisi 
-	orci accumsan ex, quis mollis enim libero id nulla. 
-	Ut ultricies id dui in lacinia. Sed vulputate lacinia nisi, vitae suscipit ipsum 
-	sagittis ac. </p>
-	<p>Nunc ut ante consectetur, vestibulum mauris 
-	vitae, mattis urna. Praesent lacinia 
-	nunc est, eu pretium magna tincidunt at.</p>
-	
-	<h2><em>Hobbies</em></h2>
-	
-	<p>Curabitur sit amet mi fringilla, ultricies mi vitae, vulputate augue. 
-	Morbi erat ligula, tempus vitae posuere vel, volutpat sed dui. Nulla elementum 
-	diam risus, at dictum ligula tempor nec. Mauris vel lorem placerat, placerat 
-	ligula sed, lobortis libero. Cras ac risus feugiat, commodo lorem at, tempor 
-	nisl. Aenean ut laoreet risus, at fringilla enim. Duis in semper sapien.</p>
-	<p>Phasellus sit amet porttitor purus. Morbi tincidunt, turpis malesuada 
-	varius pellentesque, nisi tortor convallis mi, at egestas quam est sed 
-	nibh. Sed semper lorem nulla, non mattis ante finibus at. Duis at tempus 
-	nibh. Ut eros ex, ultricies vel tempus at, porta at neque. Sed tristique 
-	consectetur ligula, vel aliquet odio mattis ac. Pellentesque rutrum ornare viverra. 
-	Nam elit orci, elementum a orci at, sodales fringilla est. Ut quis ex vel 
-	sapien fringilla convallis sed nec metus. In nec leo ut tortor semper consectetur. 
-	Cras hendrerit turpis non nisi convallis sollicitudin.</p>
-	
-	<hr />
+	<footer>
+		<p>&copy; 2019 Adrian Loera. All rights reserved.</p>
+	</footer>
 </body>
 
 </html>
