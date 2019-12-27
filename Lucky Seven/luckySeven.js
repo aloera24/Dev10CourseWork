@@ -2,6 +2,17 @@
 Creator: Adrian Loera
 Date created: 12/26/2019
 Date last modified: 12/26/2019
+
+Description:
+	This JavaScript file is used to roll the 2 die and 
+	add and comparing to see if it is 7 or not, 7 results 
+	in + $4 else - $1. It will send back the highest amount 
+	of money won, roll number at which the highest amount, 
+	starting bet, and total rolls before broke.
+
+	It only accepts integers greater than 0. No other text 
+	is accept.
+	
 */
 
 function clearErrors(){

@@ -2,6 +2,7 @@
 Creator: Adrian Loera
 Date created: 12/22/2019
 Date last modified: 12/26/2019
+
 */
 body {
 	background-color: #ffcc99;
@@ -34,16 +35,10 @@ nav .btn:hover {
 }
 
 footer {
-	/*background-color: #9999ff;
-	color: #000000;
-	height: 140px;
-	text-align: center;
-	padding: 30px 10px 20px 10px;
-	font-size: 1.1em;*/
 	margin-top: 6px;
 }
 
-/* Form Stryling */
+/* Form Styling */
 label, fieldset {
 	font-size: 1.1em;
 }
@@ -87,6 +82,7 @@ textarea {
 	background-color: #fff;
 	resize: none;
 }
+
 #current-page {
 	text-align: left;
 }
